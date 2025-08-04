@@ -36,7 +36,9 @@ dependencies:
   cupertino_icons: ^1.0.8
   
   # 用于显示LaTeX数学公式
-  flutter_math_fork: ^0.7.2
+  flutter_math_fork:
+    git:
+      url: https://github.com/Telosnex/flutter_math_fork_fork.git
   
   # 用于状态管理
   provider: ^6.1.1
