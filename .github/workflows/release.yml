@@ -40,8 +40,7 @@ jobs:
       
     - name: 打包Windows构建产物
       run: |
-        cd build\windows\x64\runner\Release
-        powershell Compress-Archive -Path * -DestinationPath ..\..\..\..\..\..\advanced_math_pocket_assistant-windows.zip
+        powershell Compress-Archive -Path "build\windows\x64\runner\Release\*" -DestinationPath "advanced_math_pocket_assistant-windows.zip"
       
     - name: 构建Android APK (分架构)
       run: flutter build apk --release --split-per-abi
